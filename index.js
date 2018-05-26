@@ -18,15 +18,19 @@ function logWhisper(string) {
 
 function sayHiToGrandma(string) {
   
-  if(`${string}` === 'hello') {
+  if(string === 'hello') {
     console.log("I can\'t hear you!")
   }
   
-  if(string === 'HELLO') {
+  else if(string === 'HELLO') {
     console.log("YES INDEED!")
   }
   
-  if(string === 'I love you, Grandma') {
-    console.log("I love you, too")
+  else if(string === 'I love you, Grandma.') {
+    console.log("I love you, too.")
+  }
+  
+  else {
+    console.log("")
   }
 }
